@@ -1,6 +1,8 @@
+import RouterPage from './routes/RouterPage';
+
 const App = () => (
-  <div className="App">
-    Upcoming...
+  <div className="text-center">
+    <RouterPage />
   </div>
 );
 
