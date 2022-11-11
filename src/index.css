@@ -3,6 +3,8 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url('https://fonts.googleapis.com/css2?family=Red+Rose:wght@300;400;500;600;700&display=swap');
+
 *,
 ::after,
 ::before {
@@ -12,5 +14,5 @@
 
 body {
   overflow-x: hidden;
-  font-family: 'Courier New', Courier, monospace;
+  font-family: 'Red Rose', Courier, monospace;
 }
