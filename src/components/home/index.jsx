@@ -1,10 +1,10 @@
 import Header from '../common/Header';
-import HomeComp from './HomeComp';
+import Intro from './Intro';
 
 const Home = () => (
-  <div>
+  <div className="flex flex-col items-center justify-center">
     <Header />
-    <HomeComp />
+    <Intro />
   </div>
 );
 export default Home;

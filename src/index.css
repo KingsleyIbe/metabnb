@@ -16,3 +16,24 @@ body {
   overflow-x: hidden;
   font-family: 'Red Rose', Courier, monospace;
 }
+
+h1 {
+  line-height: 50px;
+}
+
+p {
+  line-height: 35px;
+}
+
+.input-border {
+  border: 1px solid #a3a3a3;
+  border-radius: 8px 0 0 8px;
+}
+
+.input-border::placeholder {
+  padding-left: 10px;
+}
+
+.home-input-btn {
+  border-radius: 0 10px 10px 0;
+}

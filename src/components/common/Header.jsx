@@ -7,13 +7,13 @@ const Header = () => {
   const data = Data;
   return (
     <header className="p-10">
-      <nav className="hidden lg:flex lg:flex-row lg:items-center lg:gap-[200px] lg:max-w-[1240px]">
+      <nav className="hidden lg:flex lg:flex-row lg:items-center lg:gap-[170px] lg:max-w-[1240px]">
         <span>
           <Link to="/">
             <img src={logo} alt="Logo" />
           </Link>
         </span>
-        <span className="flex gap-5 items-center text-[#434343]">
+        <span className="flex gap-5 items-center text-[#434343] text-[20px]">
           {data && data.map((item) => (
             <ul key={item.id}>
               <li><Link to={item.href}>{item.name}</Link></li>

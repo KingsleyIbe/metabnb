@@ -1,7 +1,7 @@
 import RouterPage from './routes/RouterPage';
 
 const App = () => (
-  <div className="text-center">
+  <div>
     <RouterPage />
   </div>
 );
