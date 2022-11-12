@@ -13,13 +13,13 @@ const Footer = () => {
     <footer className="bg-[#1D1D1E] w-[100%]">
       <div className="flex gap-[100px] items-center p-[100px]">
         <div className="text-[#fff]">
-          <img src={FooterLogo} alt="Logo" className="mb-[50px]" />
+          <img src={FooterLogo} alt="Logo" className="mb-[50px] hover:opacity-[0.4]" />
           <div className="flex gap-10 items-center mb-10">
-            <img src={Facebook} alt="Facebook Logo" />
-            <img src={Instagram} alt="Instagram Logo" />
-            <img src={Twitter} alt="Twitter Logo" />
+            <a href="/" target="__blank" className="hover:opacity-[0.4]"><img src={Facebook} alt="Facebook Logo" /></a>
+            <a href="/" target="__blank" className="hover:opacity-[0.4]"><img src={Instagram} alt="Instagram Logo" /></a>
+            <a href="/" target="__blank" className="hover:opacity-[0.4]"><img src={Twitter} alt="Twitter Logo" /></a>
           </div>
-          <div className="flex gap-5 items-center">
+          <div className="flex gap-5 items-center hover:opacity-[0.4]">
             <img src={Copyright} alt="Facebook Logo" />
             <p>2022 Metabnb</p>
           </div>
@@ -27,12 +27,12 @@ const Footer = () => {
         <div className="flex gap-[250px]">
           {data && data.map((item) => (
             <ul key={item.id}>
-              <li><h4 className="text-[#fff]"><Link to={item.href}>{item.name}</Link></h4></li>
+              <li><h4 className="text-[#fff] hover:opacity-[0.4]"><Link to={item.href}>{item.name}</Link></h4></li>
               <li className="text-[#F1F3F9] opacity-[0.5]">
-                <p><Link to={item.href}>{item.subtitle[0]}</Link></p>
-                <p><Link to={item.href}>{item.subtitle[1]}</Link></p>
-                <p><Link to={item.href}>{item.subtitle[2]}</Link></p>
-                <p><Link to={item.href}>{item.subtitle[3]}</Link></p>
+                <p className="hover:opacity-[0.4]"><Link to={item.href}>{item.subtitle[0]}</Link></p>
+                <p className="hover:opacity-[0.4]"><Link to={item.href}>{item.subtitle[1]}</Link></p>
+                <p className="hover:opacity-[0.4]"><Link to={item.href}>{item.subtitle[2]}</Link></p>
+                <p className="hover:opacity-[0.4]"><Link to={item.href}>{item.subtitle[3]}</Link></p>
 
               </li>
             </ul>

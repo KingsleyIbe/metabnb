@@ -8,7 +8,7 @@ const FilterBtns = () => {
     <div className="max-w-[100%] px-[120px] py-10">
       <div className="flex gap-10 items-center">
         {data && data.map((item) => (
-          <ul key={item.id}>
+          <ul key={item.id} className="active">
             <li><button type="button">{item.title}</button></li>
           </ul>
         ))}

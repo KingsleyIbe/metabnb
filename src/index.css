@@ -37,3 +37,7 @@ p {
 .home-input-btn {
   border-radius: 0 10px 10px 0;
 }
+
+.active {
+  border-bottom: 4px solid #a02279;
+}

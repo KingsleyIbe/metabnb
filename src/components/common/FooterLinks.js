@@ -9,7 +9,7 @@ const Data = [
     id: 2,
     name: 'Places',
     subtitle: ['Castle', 'Farms', 'Beach', 'Learn more'],
-    href: '/community',
+    href: '/place-to-stay',
   },
   {
     id: 4,
