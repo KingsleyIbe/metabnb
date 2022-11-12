@@ -12,11 +12,11 @@ const HouseCards = () => {
               <img src={item.image} alt={item.alt} className="max-w-[260px]" />
               {' '}
             </li>
-            <li className="flex gap-2 items-center my-2 max-w-[100%]">
+            <li className="flex gap-2 items-center my-2 max-w-[100%] text-[12px]">
               <p>{item.title}</p>
-              <p>{item.price}</p>
+              <p className="font-bold text-right">{item.price}</p>
             </li>
-            <li className="flex gap-5 items-center mb-2 max-w-[100%]">
+            <li className="flex gap-5 items-center mb-2 max-w-[100%] text-[12px]">
               <p>{item.distance}</p>
               <p className="items-end">{item.available}</p>
             </li>

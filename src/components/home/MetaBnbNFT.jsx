@@ -2,7 +2,7 @@ import React from 'react';
 import NFT from '../../assets/images/home/ntf.png';
 
 const MetaBnbNFT = () => (
-  <div className="mt-[100px] bg-[#A02279] w-[100%]">
+  <section className="mt-[100px] bg-[#A02279] w-[100%]">
     <div className="flex flex-col lg:flex-row lg:gap-10 p-[100px]">
       <div className="max-w-[646px]">
         <h3 className="font-semibold text-[48px] lg:w-[700px] text-[#fff]">
@@ -21,7 +21,7 @@ const MetaBnbNFT = () => (
         <img src={NFT} alt="Group one" />
       </div>
     </div>
-  </div>
+  </section>
 );
 
 export default MetaBnbNFT;
