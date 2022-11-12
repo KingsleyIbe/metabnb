@@ -1,3 +1,4 @@
+import Footer from '../common/Footer';
 import Header from '../common/Header';
 import HouseCards from './HouseCards.jsx';
 import HouseCardsHeader from './HouseCardsHeader';
@@ -13,6 +14,7 @@ const Home = () => (
     <HouseCardsHeader />
     <HouseCards />
     <MetaBnbNFT />
+    <Footer />
   </div>
 );
 export default Home;
