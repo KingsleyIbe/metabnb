@@ -14,7 +14,7 @@ const Footer = () => {
       <div className="flex gap-[100px] items-center p-[100px]">
         <div className="text-[#fff]">
           <img src={FooterLogo} alt="Logo" className="mb-[50px]" />
-          <div className="flex gap-5 items-center mb-10">
+          <div className="flex gap-10 items-center mb-10">
             <img src={Facebook} alt="Facebook Logo" />
             <img src={Instagram} alt="Instagram Logo" />
             <img src={Twitter} alt="Twitter Logo" />
