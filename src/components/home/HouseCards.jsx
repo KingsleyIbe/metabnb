@@ -5,20 +5,20 @@ const HouseCards = () => {
   const data = Data;
   return (
     <div>
-      <div>
+      <div className="flex flex-row gap-2 flex-wrap items-center justify-center">
         {data && data.map((item) => (
-          <ul key={item.id}>
+          <ul key={item.id} className="rounded-[8px] bg-[#fff] border border-solid-1 p-2 w-1/7">
             <li>
-              <img src={item.image} alt={item.alt} />
+              <img src={item.image} alt={item.alt} className="max-w-[260px]" />
               {' '}
             </li>
-            <li>
+            <li className="flex gap-2 items-center my-2 max-w-[100%]">
               <p>{item.title}</p>
               <p>{item.price}</p>
             </li>
-            <li>
+            <li className="flex gap-5 items-center mb-2 max-w-[100%]">
               <p>{item.distance}</p>
-              <p>{item.available}</p>
+              <p className="items-end">{item.available}</p>
             </li>
             <li>
               <img src={item.review} alt={item.alt} />

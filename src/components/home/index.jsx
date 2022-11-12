@@ -1,5 +1,5 @@
 import Header from '../common/Header';
-import HouseCards from './HouseCards';
+import HouseCards from './HouseCards.jsx';
 import Intro from './Intro';
 import PartnerLogo from './PartnerLogo';
 
