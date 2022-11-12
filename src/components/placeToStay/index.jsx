@@ -1,5 +1,7 @@
+import Footer from '../common/Footer';
 import Header from '../common/Header';
 import FilterBtns from './FilterBtns';
+import HouseCards from './HouseCards.jsx';
 
 const PlaceToStay = () => (
   <div>
@@ -7,6 +9,8 @@ const PlaceToStay = () => (
       <Header />
     </div>
     <FilterBtns />
+    <HouseCards />
+    <Footer />
   </div>
 );
 
