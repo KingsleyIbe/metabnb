@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link, NavLink } from 'react-router-dom';
 import logo from '../../assets/images/logo.png';
 import Data from './NavItems';
@@ -9,6 +9,14 @@ const Header = () => {
   const navLinksStyles = ({ isActive }) => ({
     borderBottom: isActive ? '4px solid #A02279' : 'none',
   });
+
+  const [isOpen, setIsOpen] = useState(false);
+
+  const openMenu = () => {
+    setIsOpen(!isOpen);
+    localStorage.setItem('isOpen', !isOpen);
+  };
+
   return (
     <header className="p-10">
       <nav className="hidden lg:flex lg:flex-row lg:items-center lg:gap-[170px] lg:max-w-[1240px]">
@@ -25,7 +33,7 @@ const Header = () => {
           ))}
         </span>
         <span>
-          <button type="button" className="hover:opacity-[0.4] rounded-[10px] bg-[#A02279] px-[21px] py-[12px] text-[#fff]">Connect wallet</button>
+          <button onClick={openMenu} type="button" className="hover:opacity-[0.4] rounded-[10px] bg-[#A02279] px-[21px] py-[12px] text-[#fff]">Connect wallet</button>
         </span>
       </nav>
     </header>
