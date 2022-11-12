@@ -1,4 +1,5 @@
 import Header from '../common/Header';
+import HouseCards from './HouseCards';
 import Intro from './Intro';
 import PartnerLogo from './PartnerLogo';
 
@@ -7,6 +8,7 @@ const Home = () => (
     <Header />
     <Intro />
     <PartnerLogo />
+    <HouseCards />
   </div>
 );
 export default Home;
