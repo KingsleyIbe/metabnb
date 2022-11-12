@@ -13,7 +13,7 @@ const Footer = () => {
     <footer className="bg-[#1D1D1E] w-[100%]">
       <div className="flex gap-[100px] items-center p-[100px]">
         <div className="text-[#fff]">
-          <img src={FooterLogo} alt="Logo" className="mb-[50px] hover:opacity-[0.4]" />
+          <Link to="/"><img src={FooterLogo} alt="Logo" className="mb-[50px] hover:opacity-[0.4]" /></Link>
           <div className="flex gap-10 items-center mb-10">
             <a href="/" target="__blank" className="hover:opacity-[0.4]"><img src={Facebook} alt="Facebook Logo" /></a>
             <a href="/" target="__blank" className="hover:opacity-[0.4]"><img src={Instagram} alt="Instagram Logo" /></a>
@@ -29,10 +29,10 @@ const Footer = () => {
             <ul key={item.id}>
               <li><h4 className="text-[#fff] hover:opacity-[0.4]"><Link to={item.href}>{item.name}</Link></h4></li>
               <li className="text-[#F1F3F9] opacity-[0.5]">
-                <p className="hover:opacity-[0.4]"><Link to={item.href}>{item.subtitle[0]}</Link></p>
-                <p className="hover:opacity-[0.4]"><Link to={item.href}>{item.subtitle[1]}</Link></p>
-                <p className="hover:opacity-[0.4]"><Link to={item.href}>{item.subtitle[2]}</Link></p>
-                <p className="hover:opacity-[0.4]"><Link to={item.href}>{item.subtitle[3]}</Link></p>
+                <Link to={item.href}><p className="hover:opacity-[0.4]">{item.subtitle[0]}</p></Link>
+                <Link to={item.href}><p className="hover:opacity-[0.4]">{item.subtitle[1]}</p></Link>
+                <Link to={item.href}><p className="hover:opacity-[0.4]">{item.subtitle[2]}</p></Link>
+                <Link to={item.href}><p className="hover:opacity-[0.4]">{item.subtitle[3]}</p></Link>
 
               </li>
             </ul>
