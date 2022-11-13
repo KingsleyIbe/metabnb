@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
 import { Link, NavLink } from 'react-router-dom';
 import logo from '../../assets/images/logo.png';
+import ConnectWallet from './ConnectWallet';
 import Data from './NavItems';
 
 const Header = () => {
@@ -9,13 +9,6 @@ const Header = () => {
   const navLinksStyles = ({ isActive }) => ({
     borderBottom: isActive ? '4px solid #A02279' : 'none',
   });
-
-  const [isOpen, setIsOpen] = useState(true);
-
-  const openMenu = () => {
-    setIsOpen(!isOpen);
-    sessionStorage.setItem('isOpen', isOpen);
-  };
 
   return (
     <header className="p-10">
@@ -32,9 +25,7 @@ const Header = () => {
             </ul>
           ))}
         </span>
-        <span>
-          <button onClick={openMenu} type="button" className="hover:opacity-[0.4] rounded-[10px] bg-[#A02279] px-[21px] py-[12px] text-[#fff]">Connect wallet</button>
-        </span>
+        <ConnectWallet />
       </nav>
     </header>
   );
