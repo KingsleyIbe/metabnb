@@ -14,7 +14,6 @@ const ConnectWallet = () => {
     } else {
       setIsOpen(false);
       console.log('false');
-      
     }
   };
 
