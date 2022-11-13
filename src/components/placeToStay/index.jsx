@@ -6,8 +6,10 @@ import HouseCards from './HouseCards.jsx';
 
 const PlaceToStay = () => (
   <div>
-    <div className="lg:flex lg:flex-col lg:items-center lg:justify-center">
-      <Header />
+    <div className="">
+      <div className="px-10">
+        <Header />
+      </div>
       <MobileHeader />
     </div>
     <FilterBtns />

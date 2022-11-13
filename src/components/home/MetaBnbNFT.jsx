@@ -3,7 +3,7 @@ import NFT from '../../assets/images/home/ntf.png';
 
 const MetaBnbNFT = () => (
   <section className="mt-[100px] bg-[#A02279] w-[100%]">
-    <div className="flex flex-col gap-10 lg:flex-row lg:gap-10 p-[100px]">
+    <div className="flex flex-col gap-10 lg:flex-row lg:gap-10 p-[50px]">
       <div className="max-w-[646px]">
         <h3 className="font-semibold text-[48px] lg:w-[700px] text-[#fff]">
           Metabnb NFTs

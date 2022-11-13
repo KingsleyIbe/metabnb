@@ -5,7 +5,7 @@ import Setting from '../../assets/images/setting.png';
 const FilterBtns = () => {
   const data = Data;
   return (
-    <div className="overflow-x-auto lg:block lg:max-w-[100%] w-[90%] px-2 sm:p-10 lg:px-[120px] lg:py-10">
+    <div className="overflow-x-auto lg:block lg:max-w-[100%] w-[90%] px-2 sm:p-10 lg:px-[80px] lg:py-10">
       <div className="flex gap-10 items-center min-w-[100%]">
         {data && data.map((item) => (
           <ul key={item.id}>

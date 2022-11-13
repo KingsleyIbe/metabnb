@@ -5,7 +5,7 @@ const HouseCards = () => {
   const data = Data;
   return (
     <div>
-      <div className="flex flex-col lg:flex-row gap-4 lg:flex-wrap px-2 pt-5 w-[100%] mb-10 lg:items-center lg:justify-center">
+      <div className="flex flex-col lg:flex-row gap-4 lg:flex-wrap px-2 pt-5 w-[100%] lg:gap-4 mb-10 lg:px-10">
         {data && data.map((item) => (
           <ul key={item.id} className="rounded-[8px] bg-[#fff] border border-solid-1 p-2 w-1/7">
             <li>

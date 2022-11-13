@@ -13,7 +13,7 @@ const Home = () => {
   console.log(isOpen);
 
   return (
-    <div className={`${!isOpen ? 'opacity-[0.2]' : 'opacity-1'} lg:flex lg:flex-col lg:items-center lg:justify-center`}>
+    <div className={`${!isOpen ? 'opacity-[0.2]' : 'opacity-1'}`}>
       <>
         <Header />
         <MobileHeader />
