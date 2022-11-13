@@ -2,9 +2,9 @@ import React from 'react';
 import Group1 from '../../assets/images/home/group1.png';
 
 const Intro = () => (
-  <div className="max-w-[1240px] p-10 mt-[100px]">
-    <div className="flex flex-col lg:flex-row lg:gap-10">
-      <div className="max-w-[646px]">
+  <div className="lg:max-w-[1240px] p-10 lg:mt-[100px]">
+    <div className="flex flex-col gap-10 lg:flex-row lg:gap-10">
+      <div className="lg:max-w-[646px]">
         <h1 className="font-semibold text-[56px] lg:w-[700px]">
           <span>Rent a </span>
           <span className="text-[#A02279]">Place </span>
@@ -18,10 +18,10 @@ const Intro = () => (
           get a chance to turn your imagination to reality at your comfort zone
 
         </p>
-        <div className="max-w-[618px]">
-          <span className="flex gap-0 max-w-[618px]">
-            <input type="text" placeholder="Search for location" className="input-border" />
-            <button type="button" className="home-input-btn bg-[#A02279] px-[21px] py-[12px] text-[#fff]">Search</button>
+        <div className="lg:max-w-[618px]">
+          <span className="flex flex-col gap-2 lg:max-w-[618px]">
+            <input type="text" placeholder="Search for location" className="lg:input-border p-2 border border-1-solid rounded-[12px]" />
+            <button type="button" className="lg:home-input-btn rounded-[12px] bg-[#A02279] px-[21px] py-[12px] text-[#fff]">Search</button>
           </span>
         </div>
       </div>

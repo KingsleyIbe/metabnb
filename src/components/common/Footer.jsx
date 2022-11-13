@@ -11,20 +11,20 @@ const Footer = () => {
   const data = Data;
   return (
     <footer className="bg-[#1D1D1E] w-[100%]">
-      <div className="flex gap-[100px] items-center p-[100px]">
+      <div className="flex flex-col lg:flex-row gap-[100px] md:gap-[100px] lg:p-[100px] p-[50px]">
         <div className="text-[#fff]">
           <Link to="/"><img src={FooterLogo} alt="Logo" className="mb-[50px] hover:opacity-[0.4]" /></Link>
           <div className="flex gap-10 items-center mb-10">
-            <a href="/" target="__blank" className="hover:opacity-[0.4]"><img src={Facebook} alt="Facebook Logo" /></a>
-            <a href="/" target="__blank" className="hover:opacity-[0.4]"><img src={Instagram} alt="Instagram Logo" /></a>
-            <a href="/" target="__blank" className="hover:opacity-[0.4]"><img src={Twitter} alt="Twitter Logo" /></a>
+            <a href="/" target="__blank" className="hover:opacity-[0.4]"><img src={Facebook} alt="Facebook Logo" className="md:min-w-[30px]" /></a>
+            <a href="/" target="__blank" className="hover:opacity-[0.4]"><img src={Instagram} alt="Instagram Logo" className="md:min-w-[30px]" /></a>
+            <a href="/" target="__blank" className="hover:opacity-[0.4]"><img src={Twitter} alt="Twitter Logo" className="md:min-w-[30px]" /></a>
           </div>
           <div className="flex gap-5 items-center hover:opacity-[0.4]">
             <img src={Copyright} alt="Facebook Logo" />
             <p>2022 Metabnb</p>
           </div>
         </div>
-        <div className="flex gap-[250px]">
+        <div className="flex flex-col gap-[50px] lg:flex-row md:flex-row md:gap-[50px] lg:gap-[250px] sm:gap-[40px]">
           {data && data.map((item) => (
             <ul key={item.id}>
               <li><h4 className="text-[#fff] hover:opacity-[0.4]"><Link to={item.href}>{item.name}</Link></h4></li>
