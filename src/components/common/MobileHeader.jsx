@@ -4,7 +4,7 @@ import { faBars } from '@fortawesome/free-solid-svg-icons';
 import React, { useState } from 'react';
 import siteLogo from '../../assets/images/logo.png';
 import MobileDropDown from './MobileDropDown';
-import ConnectWallet from './ConnectWallet';
+import ConnectWalletBtn from './ConnectWalletBtn';
 
 const MobileHeader = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -16,16 +16,16 @@ const MobileHeader = () => {
   return (
 
     <div className="z-50 lg:hidden">
-      <div className="py-5 pl-2 md:p-5 sm:p-5 flex gap-0 justify-end md:gap-10 sm:gap-10 item-center relative">
+      <div className="py-5 pl-2 md:p-5 sm:p-5 flex gap-5 md:gap-10 sm:gap-10 relative">
         <Link to="/" className="flex gap-2 md:gap-2 sm:gap-2 item-center">
-          <span><img src={siteLogo} alt="Site logo" className="md:w-[50px] sm:w-[50px]" /></span>
+          <span><img src={siteLogo} alt="Site logo" className="w-[150px] md:w-[50px] sm:w-[50px]" /></span>
         </Link>
-        <div className="flex gap-0 md:gap-10 sm:gap-10 item-center">
-          <ConnectWallet />
+        <div className="flex gap-5 md:gap-10 sm:gap-10 item-center">
+          <ConnectWalletBtn />
           <button type="button" onClick={openMenu} className="">
-            <FontAwesomeIcon icon={faBars} className="text-[30px]" />
+            <FontAwesomeIcon icon={faBars} className="text-[30px] text-[#A02279]" />
           </button>
-          {!isOpen ? '' : (<div><MobileDropDown /></div>)}
+          {!isOpen ? '' : (<div className="relative"><MobileDropDown /></div>)}
         </div>
       </div>
     </div>

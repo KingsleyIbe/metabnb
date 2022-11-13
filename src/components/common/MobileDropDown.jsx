@@ -6,12 +6,12 @@ const MobileDropDown = () => {
   const data = NavItems;
 
   const navLinksStyles = ({ isActive }) => ({
-    borderBottom: isActive ? '4px solid #FFC01D' : 'none',
+    borderBottom: isActive ? '4px solid #FFF' : 'none',
   });
 
   return (
-    <header className="w-[100vw]">
-      <div className="text-[#fff] bg-[#A02279] z-50">
+    <header className="w-[100vw] z-50 absolute top-[50px] right-0">
+      <div className="text-[#fff] bg-[#A02279]">
         <nav className="p-5">
           {data.map((item) => (
             <div key={uuidv4()} className="">
