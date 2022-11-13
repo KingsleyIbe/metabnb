@@ -19,8 +19,8 @@ const Intro = () => (
 
         </p>
         <div className="lg:max-w-[618px]">
-          <span className="flex flex-col gap-2 lg:max-w-[618px]">
-            <input type="text" placeholder="Search for location" className="lg:input-border p-2 border border-1-solid rounded-[12px]" />
+          <span className="flex flex-col lg:flex-row lg:gap-0 gap-2 lg:max-w-[618px]">
+            <input type="text" placeholder="Search for location" className="lg:input-border p-2 border border-1-solid rounded-[12px] lg:rounded-0" />
             <button type="button" className="lg:home-input-btn rounded-[12px] bg-[#A02279] px-[21px] py-[12px] text-[#fff]">Search</button>
           </span>
         </div>

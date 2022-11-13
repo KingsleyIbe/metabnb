@@ -5,8 +5,8 @@ import Setting from '../../assets/images/setting.png';
 const FilterBtns = () => {
   const data = Data;
   return (
-    <div className="max-w-[100%] px-[120px] py-10">
-      <div className="flex gap-10 items-center">
+    <div className="overflow-x-auto lg:block lg:max-w-[100%] w-[90%] px-2 sm:p-10 lg:px-[120px] lg:py-10">
+      <div className="flex gap-10 items-center min-w-[100%]">
         {data && data.map((item) => (
           <ul key={item.id}>
             <li><button type="button" className="hover:opacity-[0.4]">{item.title}</button></li>

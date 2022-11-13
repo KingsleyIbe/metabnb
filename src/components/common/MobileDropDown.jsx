@@ -1,3 +1,4 @@
+import React from 'react';
 import { NavLink } from 'react-router-dom';
 import { v4 as uuidv4 } from 'uuid';
 import NavItems from './NavItems';
@@ -15,7 +16,7 @@ const MobileDropDown = () => {
         <nav className="p-5">
           {data.map((item) => (
             <div key={uuidv4()} className="">
-              <ul className="w-[100%] my-5">
+              <ul className="w-[100%] my-5 pl-5">
                 <li className="hover:opacity-[0.4]"><NavLink to={item.href} style={navLinksStyles}>{item.name}</NavLink></li>
               </ul>
             </div>
