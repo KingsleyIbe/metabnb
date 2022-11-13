@@ -11,8 +11,8 @@ const Header = () => {
   });
 
   return (
-    <header className="p-10">
-      <nav className="hidden lg:flex lg:flex-row lg:items-center lg:gap-[170px] lg:max-w-[1240px]">
+    <header className="hidden lg:p-10 lg:block">
+      <nav className="lg:flex lg:flex-row lg:items-center lg:gap-[170px] lg:max-w-[1240px]">
         <span>
           <Link to="/">
             <img src={logo} alt="Logo" />

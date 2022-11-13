@@ -15,7 +15,7 @@ const MobileDropDown = () => {
         <nav className="p-5">
           {data.map((item) => (
             <div key={uuidv4()} className="">
-              <ul className="w-[100%]">
+              <ul className="w-[100%] my-5">
                 <li className="hover:opacity-[0.4]"><NavLink to={item.href} style={navLinksStyles}>{item.name}</NavLink></li>
               </ul>
             </div>
