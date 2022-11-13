@@ -3,7 +3,9 @@ import Home from '../components/home';
 
 const HomePage = () => (
   <div>
-    <Home />
+    <>
+      <Home />
+    </>
   </div>
 );
 

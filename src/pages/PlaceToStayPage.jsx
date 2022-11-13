@@ -2,7 +2,9 @@ import PlaceToStay from '../components/placeToStay';
 
 const PlaceToStayPage = () => (
   <div>
-    <PlaceToStay />
+    <>
+      <PlaceToStay />
+    </>
   </div>
 );
 

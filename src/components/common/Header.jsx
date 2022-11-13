@@ -10,11 +10,11 @@ const Header = () => {
     borderBottom: isActive ? '4px solid #A02279' : 'none',
   });
 
-  const [isOpen, setIsOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(true);
 
   const openMenu = () => {
     setIsOpen(!isOpen);
-    localStorage.setItem('isOpen', !isOpen);
+    sessionStorage.setItem('isOpen', isOpen);
   };
 
   return (

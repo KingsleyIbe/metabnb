@@ -38,6 +38,13 @@ p {
   border-radius: 0 10px 10px 0;
 }
 
-.active {
-  border-bottom: 4px solid #a02279;
+.border-b {
+  border-bottom: 1px solid #ccc;
+}
+
+.center {
+  position: fixed;
+  top: 35%;
+  right: 50%;
+  left: 35%;
 }
