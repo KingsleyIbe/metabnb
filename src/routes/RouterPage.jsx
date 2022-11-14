@@ -8,6 +8,8 @@ const RouterPage = () => (
     <Routes>
       <Route path="/" element={<HomePage />} />
       <Route path="/place-to-stay" element={<PlaceToStayPage />} />
+      <Route path="/nfts" element={<PlaceToStayPage />} />
+      <Route path="/community" element={<PlaceToStayPage />} />
     </Routes>
   </>
 );
