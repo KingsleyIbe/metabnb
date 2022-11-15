@@ -3,7 +3,6 @@ import React, { useState } from 'react';
 import { Link, NavLink } from 'react-router-dom';
 import logo from '../../assets/images/logo.png';
 import ConnectWallet from './ConnectWallet';
-// import ConnectWalletBtn from './ConnectWalletBtn';
 import Data from './NavItems';
 
 const Header = () => {

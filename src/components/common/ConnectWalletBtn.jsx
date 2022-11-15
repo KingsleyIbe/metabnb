@@ -8,8 +8,8 @@ const ConnectWalletBtn = ({ setModal }) => {
   const handleState = () => {
     setIsClicked(!isClicked);
     setModal = isClicked;
-    console.log(setModal);
   };
+
   return (
     <div>
       <button onClick={() => setModal('modal-active')} type="button" className="hover:opacity-[0.4] rounded-[10px] bg-[#A02279] px-[21px] py-[12px] text-[#fff]">Connect wallet</button>
