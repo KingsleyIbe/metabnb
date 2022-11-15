@@ -8,6 +8,9 @@ const ConnectWallet = () => {
 
   const openModal = () => {
     setIsOpen(!isOpen);
+    if (isOpen === true) {
+      document.body.style.background = '#fff';
+    }
   };
 
   return (
