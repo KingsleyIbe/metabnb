@@ -16,7 +16,7 @@ const Home = () => {
   };
   return (
     <>
-      <div className={`${word ? 'change-bg' : 'opacity-[1]'} relative hidden lg:block`}>
+      <div className={`${word ? 'change-bg' : 'opacity-[1]'} relative lg:block`}>
         <Header changeWord={openModal} />
         <MobileHeader />
         <div>
