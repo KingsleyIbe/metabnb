@@ -21,7 +21,7 @@ const Header = () => {
 
   return (
     <>
-      <header className={`${isOpen ? 'opacity-[0.2]' : 'opacity-[1]'} hidden p-10 lg:block`}>
+      <header className={`${isOpen ? 'opacity-[0.6]' : 'opacity-[1]'} hidden p-10 lg:block`}>
         <nav className="flex flex-row items-center justify-between gap-[170px] max-w-[1240px] md:gap-[50px]">
           <span>
             <Link to="/">
