@@ -1,8 +1,6 @@
 /* eslint-disable react/prop-types */
-// import React, { useState } from 'react';
 import { Link, NavLink } from 'react-router-dom';
 import logo from '../../assets/images/logo.png';
-// import ConnectWallet from './ConnectWallet';
 import Data from './NavItems';
 
 const Header = ({ changeWord }) => {
@@ -11,14 +9,6 @@ const Header = ({ changeWord }) => {
   const navLinksStyles = ({ isActive }) => ({
     borderBottom: isActive ? '4px solid #A02279' : 'none',
   });
-
-  // const [isOpen, setIsOpen] = useState(true);
-
-  // const openModal = () => {
-  //   setIsOpen(!isOpen);
-  //   localStorage.setItem('modalState', isOpen);
-  //   console.log(isOpen);
-  // };
 
   return (
     <>

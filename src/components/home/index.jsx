@@ -13,17 +13,15 @@ const Home = () => {
   const [word, setWord] = useState(false);
   const openModal = () => {
     setWord(!word);
-    // localStorage.setItem('modalState', isOpen);
-    // console.log(isOpen);
   };
 
   return (
 
     <>
-      <div className={`${word ? 'opacity-[0.6]' : 'opacity-[1]'} relative hidden p-10 lg:block`}>
+      <div className={`${word ? 'change-bg' : 'opacity-[1]'} relative hidden p-10 lg:block`}>
         <Header changeWord={openModal} />
         <MobileHeader />
-        <div className={`${word ? 'opacity-[0.6]' : 'opacity-[1]'}`}>
+        <div>
           <Intro />
           <PartnerLogo />
           <HouseCardsHeader />
