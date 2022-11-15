@@ -12,7 +12,7 @@ const Home = () => {
   const modalState = localStorage.getItem('modalState');
   return (
     <>
-      <div>
+      <div className="relative">
         <Header />
         <MobileHeader />
         <div className={`${modalState ? 'opacity-[1]' : 'opacity-[0.1]'}`}>

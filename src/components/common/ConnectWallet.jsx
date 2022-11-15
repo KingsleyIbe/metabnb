@@ -13,7 +13,7 @@ const ConnectWallet = () => {
   return (
     <>
       {isOpen && (
-      <div className="w-[500px] rounded-[8px] p-5 border border-1-solid center bg-[#fff]">
+      <div className="w-[100%] p-10 lg:p-5 lg:w-[500px]  md:p-5 md:w-[500px] fixed md:w-[500px] lg:fixed lg:left-[35%] md:left-[25%] lg:right-[50%] lg:top-[35%] md:right-[50%] md:top-[35%] rounded-[8px] border border-1-solid bg-[#fff]">
         <div className="flex justify-between border-b">
           <h2 className="text-[#333] text-[24px] font-bold">Connect Wallet</h2>
           <button onClick={openModal} type="button" className="align-end justify-end">X</button>
