@@ -13,7 +13,7 @@ const FilterBtns = () => {
           </ul>
         ))}
         <div className="flex flex-row items-center border border-1-solid rounded-[8px] max-w-[161px] p-2">
-          <input type="text" placeholder="Location" className="max-w-[100px]" />
+          <input type="text" placeholder="Location" className="max-w-[100px] rounded-[4px]" />
           <img src={Setting} alt="Setting" />
         </div>
       </div>

@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { useState } from 'react';
+import ConnectWallet from '../common/ConnectWallet';
 import Footer from '../common/Footer';
 import Header from '../common/Header';
 import MobileHeader from '../common/MobileHeader';
@@ -9,13 +10,16 @@ import MetaBnbNFT from './MetaBnbNFT';
 import PartnerLogo from './PartnerLogo';
 
 const Home = () => {
-  const modalState = localStorage.getItem('modalState');
+  const [word, setWord] = useState(false);
+  const openModal = () => {
+    setWord(!word);
+  };
   return (
     <>
-      <div className="relative">
-        <Header />
+      <div className={`${word ? 'change-bg' : 'opacity-[1]'} relative lg:block`}>
+        <Header changeWord={openModal} />
         <MobileHeader />
-        <div className={`${modalState ? 'opacity-[1]' : 'opacity-[0.1]'}`}>
+        <div>
           <Intro />
           <PartnerLogo />
           <HouseCardsHeader />
@@ -24,6 +28,7 @@ const Home = () => {
           <Footer />
         </div>
       </div>
+      {word ? (<div className="relative"><ConnectWallet /></div>) : ''}
     </>
   );
 };

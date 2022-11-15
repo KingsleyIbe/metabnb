@@ -7,7 +7,7 @@ const HouseCards = () => {
     <div>
       <div className="flex flex-col lg:flex-row gap-4 lg:flex-wrap px-2 pt-5 w-[100%] mb-10 lg:items-center lg:justify-center">
         {data && data.map((item) => (
-          <ul key={item.id} className="rounded-[8px] bg-[#fff] border border-solid-1 p-4">
+          <ul key={item.id} className="rounded-[8px] border border-solid-1 p-4">
             <li>
               <img src={item.image} alt={item.alt} className="lg:max-w-[260px] min-w-[100%]" />
               {' '}
