@@ -15,9 +15,9 @@ const Footer = () => {
         <div className="text-[#fff]">
           <Link to="/"><img src={FooterLogo} alt="Logo" className="mb-[50px] hover:opacity-[0.4]" /></Link>
           <div className="flex gap-10 items-center mb-10">
-            <a href="/" target="__blank" className="hover:opacity-[0.4]"><img src={Facebook} alt="Facebook Logo" className="md:min-w-[30px]" /></a>
-            <a href="/" target="__blank" className="hover:opacity-[0.4]"><img src={Instagram} alt="Instagram Logo" className="md:min-w-[30px]" /></a>
-            <a href="/" target="__blank" className="hover:opacity-[0.4]"><img src={Twitter} alt="Twitter Logo" className="md:min-w-[30px]" /></a>
+            <a href="https://www.linkedin.com/in/kingsley-ibe/" target="__blank" className="hover:opacity-[0.4]"><img src={Facebook} alt="Facebook Logo" className="lg:min-w-[100%] md:min-w-[30px]" /></a>
+            <a href="https://www.linkedin.com/in/kingsley-ibe/" target="__blank" className="hover:opacity-[0.4]"><img src={Instagram} alt="Instagram Logo" className="lg:min-w-[100%] md:min-w-[30px]" /></a>
+            <a href="https://www.linkedin.com/in/kingsley-ibe/" target="__blank" className="hover:opacity-[0.4]"><img src={Twitter} alt="Twitter Logo" className="lg:min-w-[100%] w-[100%] md:min-w-[30px]" /></a>
           </div>
           <div className="flex gap-5 items-center hover:opacity-[0.4]">
             <img src={Copyright} alt="Facebook Logo" />

@@ -1,4 +1,4 @@
-import ConnectWallet from '../common/ConnectWallet';
+import React from 'react';
 import Footer from '../common/Footer';
 import Header from '../common/Header';
 import MobileHeader from '../common/MobileHeader';
@@ -9,15 +9,13 @@ import MetaBnbNFT from './MetaBnbNFT';
 import PartnerLogo from './PartnerLogo';
 
 const Home = () => {
-  const isOpen = localStorage.getItem('isOpen');
-  console.log(isOpen);
-
+  const modalState = localStorage.getItem('modalState');
   return (
-    <div className={`${!isOpen ? 'opacity-[0.2]' : 'opacity-1'}`}>
-      <>
+    <>
+      <div className="relative">
         <Header />
         <MobileHeader />
-        <div className="">
+        <div className={`${modalState ? 'opacity-[1]' : 'opacity-[0.1]'}`}>
           <Intro />
           <PartnerLogo />
           <HouseCardsHeader />
@@ -25,13 +23,8 @@ const Home = () => {
           <MetaBnbNFT />
           <Footer />
         </div>
-      </>
-      {!isOpen ? (
-        <ConnectWallet />
-      ) : (
-        null
-      )}
-    </div>
+      </div>
+    </>
   );
 };
 

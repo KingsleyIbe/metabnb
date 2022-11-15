@@ -12,9 +12,11 @@ const PlaceToStay = () => (
       </div>
       <MobileHeader />
     </div>
-    <FilterBtns />
-    <HouseCards />
-    <Footer />
+    <div className="">
+      <FilterBtns />
+      <HouseCards />
+      <Footer />
+    </div>
   </div>
 );
 
