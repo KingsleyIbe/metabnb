@@ -1,27 +1,19 @@
 /* eslint-disable react/prop-types */
-import React, { useState } from 'react';
+import React from 'react';
 import { Link, NavLink } from 'react-router-dom';
 import logo from '../../assets/images/logo.png';
-import ConnectWallet from './ConnectWallet';
 import Data from './NavItems';
 
-const Header = () => {
+const Header = ({ changeWord }) => {
   const data = Data;
 
   const navLinksStyles = ({ isActive }) => ({
     borderBottom: isActive ? '4px solid #A02279' : 'none',
   });
 
-  const [isOpen, setIsOpen] = useState(false);
-
-  const openModal = () => {
-    setIsOpen(!isOpen);
-    localStorage.setItem('modalState', isOpen);
-  };
-
   return (
     <>
-      <header className={`${isOpen ? 'opacity-[0.6]' : 'opacity-[1]'} hidden p-10 lg:block`}>
+      <header className="hidden p-10 lg:block">
         <nav className="flex flex-row items-center justify-between gap-[170px] max-w-[1240px] md:gap-[50px]">
           <span>
             <Link to="/">
@@ -36,11 +28,10 @@ const Header = () => {
             ))}
           </span>
           <div>
-            <button onClick={openModal} type="button" className="hover:opacity-[0.4] rounded-[10px] bg-[#A02279] px-[21px] py-[12px] text-[#fff]">Connect wallet</button>
+            <button onClick={() => changeWord()} type="button" className="hover:opacity-[0.4] rounded-[10px] bg-[#A02279] px-[21px] py-[12px] text-[#fff]">Connect wallet</button>
           </div>
         </nav>
       </header>
-      {!isOpen ? '' : (<div className="relative"><ConnectWallet /></div>)}
     </>
   );
 };
