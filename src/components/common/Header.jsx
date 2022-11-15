@@ -1,6 +1,9 @@
+/* eslint-disable react/prop-types */
+import React, { useState } from 'react';
 import { Link, NavLink } from 'react-router-dom';
 import logo from '../../assets/images/logo.png';
-import ConnectWalletBtn from './ConnectWalletBtn';
+import ConnectWallet from './ConnectWallet';
+// import ConnectWalletBtn from './ConnectWalletBtn';
 import Data from './NavItems';
 
 const Header = () => {
@@ -9,6 +12,12 @@ const Header = () => {
   const navLinksStyles = ({ isActive }) => ({
     borderBottom: isActive ? '4px solid #A02279' : 'none',
   });
+
+  const [isOpen, setIsOpen] = useState(false);
+
+  const openMenu = () => {
+    setIsOpen(!isOpen);
+  };
 
   return (
     <header className="hidden p-10 lg:block">
@@ -25,8 +34,11 @@ const Header = () => {
             </ul>
           ))}
         </span>
-        <ConnectWalletBtn />
+        <div>
+          <button onClick={openMenu} type="button" className="hover:opacity-[0.4] rounded-[10px] bg-[#A02279] px-[21px] py-[12px] text-[#fff]">Connect wallet</button>
+        </div>
       </nav>
+      {!isOpen ? '' : (<div className="relative"><ConnectWallet /></div>)}
     </header>
   );
 };

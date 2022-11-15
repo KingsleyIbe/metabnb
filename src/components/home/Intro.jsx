@@ -2,8 +2,8 @@ import React from 'react';
 import Group1 from '../../assets/images/home/group1.png';
 
 const Intro = () => (
-  <div className="lg:max-w-[1240px] p-10 lg:mt-[100px]">
-    <div className="flex flex-col gap-10 lg:flex-row lg:gap-10">
+  <div className="lg:max-w-[100%] p-10 lg:mt-[100px]">
+    <div className="flex flex-col gap-10 lg:flex-row lg:gap-10 lg:justify-between">
       <div className="lg:max-w-[646px]">
         <h1 className="font-semibold text-[56px] lg:w-[700px]">
           <span>Rent a </span>
