@@ -23,8 +23,9 @@
 
 ## Live Demo
 
-[Live Demo Link](https://metabnb-ten.vercel.app/)
-[Figma Design Link](https://www.figma.com/file/OQ0TTzCJ7I3kzXUQDb8k45/Metabnb-for-frontend-(Copy)?node-id=1%3A250&t=7gODkvQvWr3oZmoF-0)
+- [Live Demo Link](https://metabnb-ten.vercel.app/)
+
+- [Figma Design Link](https://www.figma.com/file/OQ0TTzCJ7I3kzXUQDb8k45/Metabnb-for-frontend-(Copy)?node-id=1%3A250&t=7gODkvQvWr3oZmoF-0)
 
 ## Getting Started
 
